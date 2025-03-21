@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 6</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            width: 40rem;
+            margin: 1rem auto;
+        }
+
+        .container {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 40rem;
+            min-height: 25rem;
+            margin: 1rem auto;
+            border: 1px solid grey;
+            box-shadow: .5rem .5rem .3rem .01rem gray;
+        }
+       .mensagem{
+            background-color: blue;
+            color: yellow;
+            text-align:center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 8rem;
+            height: 8rem;
+            border-radius: 100%;
+            padding: 1rem;
+            font-weight: bold;
+            margin: 1rem;
+            box-shadow: .5rem .5rem .3rem .01rem grey;
+            
+
+        }
+         
+    </style>
+</head>
+
+<body>
+    <h1>Estrutura De For</h1>
+    <div class="container">
+        <script>
+            
+            var i,
+                limInf=parseInt(prompt("informe o limite inferior:"));
+                limSup=parseInt(prompt("informe o limite superior:"));
+            for(i=limInf;i<=limSup;i++)
+                if(i%2==0)
+                    document.write(`<div class="mensagem"> ${i}</div>`);
+            
+
+            
+        </script>
+    </div>
+
+</body>
+
+</html>
